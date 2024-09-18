@@ -36,9 +36,9 @@ public class CompanyController {
 	}
 
 	@PutMapping("/update/{id}")
-	public ResponseEntity<CompanyResponseDto> update(@Valid @RequestBody CompanyRequestDto produitDto,
+	public ResponseEntity<CompanyResponseDto> update(@Valid @RequestBody CompanyRequestDto companyDto,
 			@PathVariable Integer id) throws NotFoundException {
-		CompanyResponseDto dto = service.update(produitDto, id);
+		CompanyResponseDto dto = service.update(companyDto, id);
 		return ResponseEntity.accepted().body(dto);
 	}
 

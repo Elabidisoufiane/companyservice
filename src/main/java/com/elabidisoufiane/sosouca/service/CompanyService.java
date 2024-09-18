@@ -12,6 +12,7 @@ public interface CompanyService {
 	CompanyResponseDto save(CompanyRequestDto Dto);
 
 	CompanyResponseDto findById(Integer id);
+	
 
 	CompanyResponseDto findByName(String title);
 

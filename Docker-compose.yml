@@ -20,6 +20,7 @@ services:
   company:
     build:
       context: .
+      dockerfile: Dockerfile
     container_name: companyservice
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://companyservicedb:5432/company_db_2
