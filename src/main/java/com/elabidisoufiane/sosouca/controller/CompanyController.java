@@ -3,6 +3,7 @@ package com.elabidisoufiane.sosouca.controller;
 import java.util.List;
 
 import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
+import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,8 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/company")
+@CrossOrigin(origins = "http://localhost:3000")
+
 public class CompanyController {
 
 	private final CompanyService service;
